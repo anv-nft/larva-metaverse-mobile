@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aniverse Metaverse</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="images/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="./images/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- //favicon -->
+    <link href="css/common.css" rel="stylesheet">
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/jquery.modal.min.js"></script>
+    <link href="css/jquery.modal.min.css" rel="stylesheet">
+</head>
+<body>
+<div id="main">
+    <div id="intro">
+        <a href="#"><img src="images/intro.jpg" alt=""></a>
+    </div>
+    <div class="vbox">
+        <video id="intro_video" class="intro_video">
+            <source src="images/intro.mp4" type="video/mp4"/>
+            지원하지 않는 브라우저입니다.
+        </video>
+    </div>
+    <div id="content">
+        <div id="content_bg"></div>
+        <header>
+            <div>
+                <img src="images/logo.png" alt="logo image" width="100%">
+            </div>
+            <div>
+                <button onclick="lang_change('en');">
+                    <img src="images/en_btn.png" alt="en lang btn image">
+                </button>
+                <button onclick="lang_change('ko');">
+                    <img src="images/ko_btn.png" alt="ko lang btn image">
+                </button>
+            </div>
+        </header>
+        <div id="item_box">
+            <img src="images/title.png" class="title">
+            <div id="btn_box">
+                <a href="#marketModal" rel="modal:open">
+                    <img src="images/market_btn.png">
+                </a>
+                <a href="#governanceModal" rel="modal:open">
+                    <img src="images/governance_btn.png">
+                </a>
+                <a href="#bridgeModal" rel="modal:open">
+                    <img src="images/bridge_btn.png">
+                </a>
+                <a href="#nftModal" rel="modal:open">
+                    <img src="images/nft_btn.png">
+                </a>
+                <a href="#whitePaperModal" rel="modal:open">
+                    <img src="images/white_paper_btn.png">
+                </a>
+                <a href="#mediaModal" rel="modal:open">
+                    <img src="images/media_btn.png">
+                </a>
+                <a href="#infoModal" rel="modal:open">
+                    <img src="images/info_btn.png">
+                </a>
+            </div>
+        </div>
+        <footer>
+            <div id="copyright">
+                <p>Copyright © ANIVERSE. All rights reserved.<br>
+                    6 EU TONG SEN STREET #11-10N THE CENTRAL SINGAPORE</p>
+            </div>
+            <div id="footer_icon">
+                <a href="https://open.kakao.com/o/gCGOxhAc" target="_blank">
+                    <img src="images/kakao_01_btn.png">
+                </a>
+                <a href="https://open.kakao.com/o/gSZGxsJc" target="_blank">
+                    <img src="images/kakao_02_btn.png">
+                </a>
+                <a href="https://t.me/joinchat/AAAAAFe2QpUJl8SOEb7pww" target="_blank">
+                    <img src="images/telegram_ko_btn.png">
+                </a>
+                <a href="https://t.me/aniverse_official_worldwide" target="_blank">
+                    <img src="images/telegram_en_btn.png">
+                </a>
+                <a href="https://medium.com/aniverse" target="_blank">
+                    <img src="images/medium_btn.png">
+                </a>
+                <a href="https://www.instagram.com/aniverse_official/" target="_blank">
+                    <img src="images/instagram_btn.png">
+                </a>
+                <a href="https://www.facebook.com/aniversefoundation" target="_blank">
+                    <img src="images/facebook_btn.png">
+                </a>
+                <a href="https://twitter.com/ANIVERSE17" target="_blank">
+                    <img src="images/twitter_btn.png">
+                </a>
+                <!--                <a href="https://www.youtube.com/channel/UCtNZrgrnw9qDIe38iFGL1Rg" target="_blank">-->
+                <!--                    Youtube-->
+                <!--                </a>-->
+                <!--                <a href="https://blog.naver.com/aniverse2020" target="_blank">-->
+                <!--                    Blog-->
+                <!--                </a>            </div>-->
+            </div>
+        </footer>
+    </div>
+</div>
+<div id="marketModal" class="modal aniverseModal">
+    <h1>NFT MARKET</h1>
+    <div class="modal_content">
+        <div>
+            <img src="images/market.png">
+        </div>
+        <div>
+            <p class="ko_lang">
+                ANIVERSE NFT Marketplace는 이더리움과
+                클레이튼 두 메인넷을 지원하는 멀티 체인 NFT마켓
+                입니다. 고정가 거래 및 옥션 거래가 가능합니다. 또한
+                Import 기능을 통해 외부에서 발행이 된 NFT의
+                구매를 지원합니다.
+                ANIVERSE NFT는 기본적으로 ANV/KANV토큰을
+                이용하여 거래가 가능하며, 추후 ANV외에도 다양한
+                토큰들로 거래가 가능하도록 하여 더욱 활발한 NFT의
+                거래가 가능하도록 지원할 예정입니다.
+            </p>
+            <p class="en_lang">
+                ANIVERSE NFT Marketplace is a multi-chain
+                NFT market that supports both mainnets
+                Ethereum, and Klaytn. Fixed price trading and
+                auction trading are available. It also supports
+                the purchase of externally issued NFTs through
+                the import function. ANIVERSE NFT is transactable
+                using ANV/KANV tokens, and we plan to support
+                more active NFT trading by making it possible
+                to trade with various tokens other than
+                ANV in the future.
+            </p>
+            <a href="https://aniversenft.com/" target="_blank">
+                <img src="images/market_link01.png" style="width: 70%;max-width: 150px">
+            </a>
+        </div>
+    </div>
+</div>
+<div id="governanceModal" class="modal aniverseModal">
+    <h1>GOVERNANCE</h1>
+    <div class="modal_content">
+        <div>
+            <img src="images/governance.png">
+        </div>
+        <div>
+            <p class="ko_lang">
+                프로젝트 안건을 발의하고, 서로 소통하며 투표로
+                안건의 찬반을 결정하는 의사결정 시스템입니다.
+                ANIVERSE Governance를 통해 ANIVERSE는
+                생태계 참여자와 함께 논의하고, 결정하며
+                전개하는 탈중앙화 프로젝트를 실현합니다.
+            </p>
+            <p class="en_lang">
+                ANIVERSE Governance is a decision-making
+                system in which ecosystem participants
+                initiate project agendas, communicate with
+                each other, and vote for or against the agenda.
+                Through ANIVERSE Governance, ANIVERSE
+                carries out decentralized projects that have
+                been discussed, decided and formed by
+                members within the ecosystem.
+            </p>
+            <a href="javascript:alert('COMING SOON');">
+                <img src="images/governance_link01.png" style="width: 70%;max-width: 150px">
+            </a>
+        </div>
+    </div>
+</div>
+<div id="bridgeModal" class="modal aniverseModal">
+    <h1>BRIDGE</h1>
+    <div class="modal_content">
+        <div>
+            <img src="images/bridge.png">
+        </div>
+        <div>
+            <p class="ko_lang">
+                ANIVERSE Swap은 애니버스의 이더리움
+                메인넷 기반 ANV(ERC20)와 KANV(KIP7)를
+                1:1비율로 양방향 교환할 수 있는 서비스입니다.
+                ANIVERSESMS 본 브릿지 시스템을 통해
+                다양한 메인넷으로의 생태계 확장을 도모합니다.
+            </p>
+            <p class="en_lang">
+                ANIVERSE Swap is a service that allows you to
+                exchange Aniverse's Ethereum mainnet -based
+                ANV(ERC20) and KANV(KIP7) in a 1:1 ratio.
+                ANIVERSE seeks to expand the ecosystem to
+                various mainnets through this bridge system.
+            </p>
+            <a href="https://swap.aniverse.io/" target="_blank">
+                <img src="images/bridge_link01.png" style="width: 70%;max-width: 150px">
+            </a>
+        </div>
+    </div>
+</div>
+<div id="nftModal" class="modal aniverseModal">
+    <h1>NFT</h1>
+    <div class="modal_content">
+        <div>
+            <img src="images/nft.png">
+        </div>
+        <div>
+            <p class="ko_lang">
+                애니버스의 LARVA NFT는 다양한 작품의 캐릭터가
+                한 데 모이는 캐릭터 메타버스 ‘애니버스’에서
+                자신이 보유한 PFP NFT를 통해 스스로 캐릭터가
+                되어 참여합니다.
+            </p>
+            <p class="en_lang">
+                Aniverse NFT is a character based metaverse
+                where characters from various productions
+                come together. Anyone can participate in
+                Aniverse platform and become characters with their own PFP NFT.
+            </p>
+            <a href="https://larvanft.aniverse.io/" target="_blank">
+                <img src="images/nft_link01.png" style="width: 40%;max-width: 150px">
+            </a>
+            <a href="https://larvakids.aniversenft.com/" target="_blank">
+                <img src="images/nft_link02.png" style="width: 40%;max-width: 150px;padding-left: 0">
+            </a>
+        </div>
+    </div>
+</div>
+<div id="whitePaperModal" class="modal aniverseModal">
+    <h1>WHITE PAPER</h1>
+    <div class="modal_content">
+        <div>
+            <img src="images/white_paper.png">
+        </div>
+        <div>
+            <p class="ko_lang">
+                ANIVERSE는 Video, Game,Shopping,
+                DeFi,DAO등  ANIVESE가 구축한 메타버스
+                에서 사용자가 다양한 콘텐츠를 즐기고 경험한
+                것에 대해 보상을 받을 수 있는 ‘E2E Metaverse
+                Platform’입니다.ANIVERSE프로젝트 소개
+                프로젝트 주요 서비스 안내 로드맵 등의 상세 정보는
+                ANIVERSE 백서 3.0에서 확인할 수 있습니다.
+            </p>
+            <p class="en_lang">
+                ANIVERSER is an 'E2E Metaverse Platform'
+                where users can enjoy and receive rewards
+                for various contents on the metaverse built by
+                ANIVERSE, such as Videos, Game, Shopping,
+                DeFi, and DAO. Detailed infomation such as
+                ANIVERSE Project Introduction · Project main
+                service guide · Roadmap can be found in
+                ANIVERSE White Paper 3.0.
+
+            </p>
+            <a href="https://aniverse.gitbook.io/whitepaper/" target="_blank">
+                <img src="images/white_paper_link01.png" style="width: 70%;max-width: 150px">
+            </a>
+        </div>
+    </div>
+</div>
+<div id="mediaModal" class="modal aniverseModal">
+    <h1>MEDIA</h1>
+    <div class="modal_content">
+        <div>
+            <img src="images/media.png">
+        </div>
+        <div>
+            <p class="ko_lang">
+                ANIVERSE는 대표 캐릭터 'Larva'를 비롯하여
+                다양한 캐릭터 IP의 미디어 컨텐츠를 제공합니다.
+            </p>
+            <p class="en_lang">
+                ANIVERSE provides media contents of various
+                character IPs, including the central
+                character 'Larva'.
+            </p>
+            <a href="https://www.youtube.com/c/LarvaTuba" target="_blank">
+                <img src="images/media_link01.png" style="width: 70%;max-width: 150px">
+            </a>
+        </div>
+    </div>
+</div>
+<div id="infoModal" class="modal aniverseModal">
+    <h1>INFO</h1>
+    <div class="modal_content">
+        <div>
+            <img src="images/info.png">
+        </div>
+        <div>
+            <p class="ko_lang">
+                ANIVERSE는 생태계 참여자 여러분의 의견과
+                문의사항 · ANIVERSE와 함께 협업을 희망하는
+                비즈니스 파트너 프로젝트의 협업 제안에 열려
+                있습니다. ANIVERSE 팀에 전하고 싶은 의견이
+                있으시면 언제든지 아래의 주소로 연락주시기
+                바랍니다.
+            </p>
+            <p class="en_lang">
+                ANIVERSE is open to comments and in quiries
+                from ecosystem participants · Proposals for
+                business partnership projects wishing to
+                collaborate with ANIVERSE.
+                If you have any comments you would like to
+                share with the ANIVERSE team, please feel
+                free to contact us at the address below.
+            </p>
+            <a href="https://linktr.ee/official_aniverse" target="_blank">
+                <img src="images/info_link01.png" style="width: 25%;max-width: 150px">
+            </a>
+            <a href="https://linktr.ee/aniverse_larva" target="_blank">
+                <img src="images/info_link02.png" style="width: 25%;max-width: 150px;padding-left: 0;">
+            </a>
+            <a href="#supportModal" rel="modal:open">
+                <img src="images/info_link03.png" style="width: 25%;max-width: 150px;padding-left: 0;">
+            </a>
+        </div>
+    </div>
+</div>
+<div id="supportModal" class="modal supportModalSt" style="max-width:350px">
+    <input type="text" id="copyMail" value="aniverse@aniverse.io">
+    <div class="text-center"><a href="javascript:void(0)" onclick="fn_copy()" class="copyBtn">copy</a></div>
+</div>
+<script src="js/common.js"></script>
+<script>
+    $(document).ready(function () {
+
+        $("#intro").on("click", function () {
+            $(".vbox").show();
+            $(this).fadeOut(500, function () {
+                console.log("start");
+                $(".intro_video").show();	//2. fade in 처리.
+                let intro_video = document.getElementById("intro_video");
+                intro_video.play();
+            });
+        });
+
+        $(".intro_video").on("ended", function () {
+            //4. intro class 삭제.
+            $("#intro, #intro_video, .vbox").remove();
+            $("#wrap").show();
+            init();
+        });
+    });
+</script>
+</body>
+</html>
