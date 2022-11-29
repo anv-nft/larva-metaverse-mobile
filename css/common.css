@@ -44,34 +44,41 @@ input, select {vertical-align:top; margin-top:0 !important}
 }
 #content header{
 	display: flex;
+	justify-content: space-between;
 	background: rgba(255,255,255,0.8);
 	padding: 20px;
 }
 #content header>div{
 	display: inline-block;
 	width: 50%;
+	max-width: 250px;
 	text-align: right;
 }
 #content header>div>button{
 	display: inline-block;
 	width: 25%;
+	max-width: 60px;
 }
 #item_box{
 	text-align: center;
 }
 #item_box>.title{
 	width: 60%;
+	max-width: 750px;
 	padding: 10%;
 }
 #btn_box{
 	display: flex;
+	justify-content:center;
 	flex-wrap: wrap;
 	width: 80%;
 	margin: 0 auto;
 	justify-content: space-between;
+	padding-bottom: 10%;
 }
 #btn_box>a{
 	width: 30%;
+	max-width: 200px;
 }
 .aniverseModal>h1{
 	font-size: 1.5rem;
@@ -128,6 +135,7 @@ input, select {vertical-align:top; margin-top:0 !important}
 }
 #footer_icon{
 	display: flex;
+	justify-content: center;
 	width: 80%;
 	margin: 0 auto;
 }
