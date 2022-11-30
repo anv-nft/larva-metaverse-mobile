@@ -54,7 +54,23 @@ input, select {vertical-align:top; margin-top:0 !important}
 #content header>div>button{
 	display: inline-block;
 	width: 25%;
+	height: 100%;
 	max-width: 60px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.en_lang_btn{
+	background-image: url(../images/en_btn.png);
+}
+.ko_lang_btn{
+	background-image: url(../images/ko_btn.png);
+}
+#content header>div>.ko_lang_btn.active{
+	background-image: url(../images/ko_btn_active.png);
+}
+#content header>div>.en_lang_btn.active{
+	background-image: url(../images/en_btn_active.png);
 }
 #item_box{
 	text-align: center;
@@ -152,4 +168,10 @@ input, select {vertical-align:top; margin-top:0 !important}
 #intro div {position:absolute; top:0; right:0; left:0; bottom:0; z-index:1110; display:block; width:100%; height:100%; background:url('../images/intro_bg.jpg') center bottom no-repeat; background-size:cover;}
 .vbox {background:#000; width:100%; height:100vh; text-align:center; display:none;}
 .vbox video {width:100%; height:100%; object-fit: fill; display:none;}
+
+@media (min-width:600px){
+	.ko_lang, .en_lang {
+ 		font-size: 1rem;
+	}
+}
 
