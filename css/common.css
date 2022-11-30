@@ -86,7 +86,6 @@ input, select {vertical-align:top; margin-top:0 !important}
 	flex-wrap: wrap;
 	width: 80%;
 	margin: 0 auto;
-	justify-content: space-between;
 	padding-bottom: 10%;
 }
 #btn_box>a{
