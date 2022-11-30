@@ -121,6 +121,8 @@ input, select {vertical-align:top; margin-top:0 !important}
 	word-break: keep-all;
 	padding-left: 1rem;
 	font-size: 0.7rem;
+	line-height: 1.3;
+	font-weight: bold;
 	color: #000;
 }
 #marketModal{color: #784C89;}
