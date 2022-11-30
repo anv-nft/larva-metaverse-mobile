@@ -1,5 +1,6 @@
 @charset "utf-8";
-
+@import url('https://webfontworld.github.io/gyeonggi/GyeonggiTitle.css');
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
 /* reset css*/
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed,  figure, figcaption, footer, header, hgroup,  menu, nav, output, ruby, section, summary, time, mark, audio, video, input, button {margin:0; padding:0; border:0; font-size:100%; font-family:'klavika-web', sans-seri; vertical-align:baseline}
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display:block}
@@ -93,6 +94,8 @@ input, select {vertical-align:top; margin-top:0 !important}
 	max-width: 200px;
 }
 .aniverseModal>h1{
+	font-family: 'Pretendard';
+	font-weight: 700;
 	font-size: 1.5rem;
 	padding: 10% 0;
 }
@@ -118,11 +121,12 @@ input, select {vertical-align:top; margin-top:0 !important}
 
 .en_lang{display: none;}
 .ko_lang, .en_lang{
+	font-family: 'GyeonggiTitle';
+	font-weight: 700;
 	word-break: keep-all;
 	padding-left: 1rem;
 	font-size: 0.7rem;
 	line-height: 1.3;
-	font-weight: bold;
 	color: #000;
 }
 #marketModal{color: #784C89;}
@@ -142,10 +146,11 @@ input, select {vertical-align:top; margin-top:0 !important}
 	padding: 10px 0px;
 }
 #copyright{
+	font-family: 'Pretendard';
+	font-size: 0.8rem;
 	line-height: 1.2;
 	text-align: center;
 	padding: 10px 0px;
-	font-size: 0.6rem;
 }
 #footer_icon{
 	display: flex;
