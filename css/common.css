@@ -94,7 +94,7 @@ input, select {vertical-align:top; margin-top:0 !important}
 	max-width: 200px;
 }
 .aniverseModal>h1{
-	font-family: 'Pretendard';
+	font-family: 'GyeonggiTitle';
 	font-weight: 700;
 	font-size: 1.5rem;
 	padding: 10% 0;
@@ -121,7 +121,7 @@ input, select {vertical-align:top; margin-top:0 !important}
 
 .en_lang{display: none;}
 .ko_lang, .en_lang{
-	font-family: 'GyeonggiTitle';
+	font-family: 'Pretendard';
 	font-weight: 700;
 	word-break: keep-all;
 	padding-left: 1rem;
